@@ -24,7 +24,7 @@ python3 -m venv venv
     source venv/scripts/activate
     ```
 
-Установить зависимости из файла requirements.txt:
+Установите зависимости из файла requirements.txt:
 
 ```
 python3 -m pip install --upgrade pip
@@ -32,6 +32,11 @@ python3 -m pip install --upgrade pip
 
 ```
 pip install -r requirements.txt
+```
+
+Выполните миграции:
+```
+python3 manage.py migrate
 ```
 
 Запустите проект:
