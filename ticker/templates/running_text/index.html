@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Бегущая строка</title>
+</head>
+<body>
+    <h1>Создание видео бегущей строки (100 на 100, длина 3 секунды)</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="text">Введите текст:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Создать видео">
+    </form>
+    <a href="list" %>Список список всех запросов</a>
+</body>
+</html>

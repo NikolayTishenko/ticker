@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список запросов</title>
+</head>
+<body>
+    <h1>Список всех запросов</h1>
+    <ul>
+        {% for user_request in user_requests %}
+            <li>{{ user_request.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
